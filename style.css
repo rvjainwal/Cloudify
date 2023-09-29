@@ -33,8 +33,9 @@ body{
 	color: white;
 }
 
+
 #video{
-	height: 350px;
+	height: 600px;
 	position: relative;
 	overflow: hidden;
 }
@@ -61,6 +62,16 @@ video {
   	text-align: center;
   	color: black;
 
+}
+
+.boldContent{
+	color: white;
+	font-size: 35px;
+}
+
+.Content{
+	color: white;
+	font-size: 25px;
 }
 
 h1{
@@ -111,7 +122,6 @@ p{
 
 .ecosystem{
 	position: absolute;
-	top: 500px;
 	display: flex;
 	flex-direction:column;
 	justify-content: center;
@@ -189,7 +199,7 @@ p{
 
 .highlights{
 	position: absolute;
-	top: 1300px;
+	top: 1550px;
 	display: flex;
 	flex-direction:row;
 	justify-content: center;
@@ -277,13 +287,13 @@ p{
 
 .testimonials{
 	position: absolute;
-	top: 2000px;
+	top: 2250px;
 	width: 100%;
 	align-items: center;
   	text-align: center;
 	height: 900px;
 	line-height: 2.5;
-	background-color: #f4f6ff;
+	background-color: white;
 
 }
 
@@ -394,3 +404,10 @@ p{
     opacity: 1; /* Full opacity for the highlighted symbol */
 }
 
+.last{
+	position: absolute;
+	background-image: url('content/images/blue-background-with-white-lines-white-triangle_483537-4476.jpg');
+	top:3500px;
+	height:500px;
+	width: 100%;
+}
