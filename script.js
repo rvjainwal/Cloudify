@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function () {
     const testimonialsContainer = document.querySelector(".testimonials-container");
     const prevButton = document.getElementById("prev");
@@ -42,4 +43,17 @@ document.addEventListener("DOMContentLoaded", function () {
     updateSliderIndicator();
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const tree = document.querySelector(".tree");
+  const hill = document.querySelector(".hill");
+  const lastContainer = document.querySelector(".last");
 
+  window.addEventListener("scroll", function () {
+    const scrollY = window.scrollY;
+    const treeTranslate = -scrollY * 0.3; // Adjust the speed and direction as needed
+    const hillTranslate = scrollY * 0.3; // Adjust the speed and direction as needed
+
+    tree.style.transform = `translate3d(0, ${treeTranslate}px, 0)`;
+    hill.style.transform = `translate3d(0, ${hillTranslate}px, 0)`;
+  });
+});

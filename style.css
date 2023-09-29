@@ -5,12 +5,13 @@ body{
 
 #navBar{
 	padding-top: 10px;
-	padding-right: 5%;
+	padding-right: 3%;
 	padding-bottom: 10px;
+	padding-left: 3%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 80px;
+	height: 105px;
 	background: black;
 }
 
@@ -21,16 +22,16 @@ body{
 .InNavBar{
 	display: flex;
 	font-size: 20px;
-	padding:3%;
-	justify-content: space-between;
 }
 
 .Navlink{
-	padding: 5%;
+	justify-content: space-between;
 	font-weight: bold;
 	white-space: nowrap;
+	padding-right: 30px;
 	justify-content: center;
 	color: white;
+	right: 10px;
 }
 
 
@@ -199,7 +200,7 @@ p{
 
 .highlights{
 	position: absolute;
-	top: 1550px;
+	top: 1573px;
 	display: flex;
 	flex-direction:row;
 	justify-content: center;
@@ -287,7 +288,7 @@ p{
 
 .testimonials{
 	position: absolute;
-	top: 2250px;
+	top: 700px;
 	width: 100%;
 	align-items: center;
   	text-align: center;
@@ -404,10 +405,148 @@ p{
     opacity: 1; /* Full opacity for the highlighted symbol */
 }
 
-.last{
+.last {
 	position: absolute;
-	background-image: url('content/images/blue-background-with-white-lines-white-triangle_483537-4476.jpg');
-	top:3500px;
-	height:500px;
+	top: 3175px;
 	width: 100%;
+	height: 1000px;
+	z-index: 2;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.background-images{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.hill,
+.tree {
+ 	position: relative;
+  	background-size: cover;
+	height: 100%;
+	width: 100%;
+}
+
+.hill {
+	background-image: url('content/images/hill.png');
+  	transition: transform 0.3s ease;
+  	z-index: 1;
+  	bottom: 40%;
+}
+
+.tree {
+  background-image: url('content/images/tree.png');
+  transition: transform 0.3s ease;
+  z-index: 1;
+  top: 20%;
+  height: 90%;
+}
+
+.content-last {
+  position: relative;
+  bottom: 50%;
+  z-index: 3; /* Ensure content is on top of backgrounds */
+  padding: 20px; /* Adjust padding as needed */
+  bottom: 1850px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+#button-last{
+	height: 50px;
+
+}
+
+
+#lastButton {
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	border-radius: 10px;
+	background: darkblue;
+  	padding: 10px 55px 10px 20px; /* Increase left padding for arrow */
+  	border: none; /* Remove button border */
+  	position: relative;
+  	cursor: pointer;
+  	overflow: hidden;
+}
+
+/* Style the arrow icon */
+#lastButton::before {
+	  content: "→"; /* Right arrow character */
+	  position: absolute;
+	  right: 20px; /* Initial position outside the button */
+	  top: 45%; /* Vertically center the arrow */
+	  transform: translateY(-50%); /* Adjust vertical position */
+	  opacity: 1; /* Initially visible */
+	  font-size:25px; 
+	  transition: right 0.3s ease; /* Animate right position */
+}
+
+/* Hover effect: Move the arrow forward */
+#lastButton:hover::before {
+	  right: 10px; /* Move the arrow forward on hover */
+}
+
+.footer-div{
+	position: absolute;
+	width: 100%;
+	background-color: #0e1724;
+	top: 4175px;
+	height: 200px;
+  }
+
+  footer{
+	  display: flex;
+	  flex-direction: row;
+	  align-content: center;
+	  align-items: center;
+	  color: white;
+	  padding-left: 2%;
+	  padding-right: 2%;
+	  height: 100%;
+	  justify-content: space-between;
+}
+
+.logo{
+	display: flex;
+	flex-direction:row;
+	padding-right: 20px;
+	font-size: 30px;
+	color: white;
+	align-items: center;
+	align-content: center;
+
+}
+
+.logo-cloudify{
+	height: auto;
+	width: 120px;
+	padding-right: 20px;
+	transition: transform 0.3s ease; 
+}
+
+.logo-cloudify:hover{
+	transform: rotate(360deg);
+
+}
+
+.footerLink{
+	color: white;
+
+}
+
+.footer-content h1{
+	font-size: large;
+}
+
+.footer-content p{
+	font-size: small;
+	font-style: italic;
 }
