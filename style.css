@@ -4,6 +4,7 @@ body{
 }
 
 #navBar{
+	position: fixed;
 	padding-top: 10px;
 	padding-right: 3%;
 	padding-bottom: 10px;
@@ -13,6 +14,9 @@ body{
 	align-items: center;
 	height: 105px;
 	background: black;
+	z-index: 100;
+	left: 0;
+	right: 0;
 }
 
 #logo{
@@ -32,6 +36,11 @@ body{
 	justify-content: center;
 	color: white;
 	right: 10px;
+	text-decoration: none;
+}
+
+.Navlink:hover{
+	text-decoration: underline;
 }
 
 
@@ -42,13 +51,14 @@ body{
 }
 
 video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Make the video cover the entire container */
-  z-index: -1; /* Place the video behind other content */
+ 	position: absolute;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	height: 100%;
+  	object-fit: cover; /* Make the video cover the entire container */
+  	z-index: -1; /* Place the video behind other content */
+ 	filter: brightness(0.4); 
 }
 
 .contentOver{
@@ -68,11 +78,15 @@ video {
 .boldContent{
 	color: white;
 	font-size: 35px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .Content{
 	color: white;
 	font-size: 25px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 h1{
@@ -83,7 +97,7 @@ h1{
 
 p{
 	font-size: 16px;
-	font-weight: italic;
+	font-style: italic;
 }
 
 #button-container{
@@ -139,7 +153,7 @@ p{
 #services{
 	position: relative;
 	top: 400px;
-	height: 400px;
+	height: 700px;
 	display: flex;
 }
 
@@ -150,20 +164,17 @@ p{
 
 .over-image{
 	padding: 5%;
-	opacity: 80%;
-	height: 60%;
+	height: 40%;
 	background: lightblue;
 	z-index: 1;
 	position: absolute;
-	top: 40%;
+	top: 60%;
 	left: 0;
 	bottom: 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	transition: height 0.3s ease;
-	transition: top 0.3s ease;
-	transition: opacity 0.3s ease;
+	transition: height 0.3s ease, top 0.3s ease, opacity 0.3s ease;
 }
 
 .boldOver{
@@ -174,7 +185,54 @@ p{
 	font-size: medium;
 }
 
-.over-image:hover{
+.servicePane:hover  p{
+	opacity: 0;
+	height: 0;
+	margin: 0;
+	transition: opacity 0.3 ease, height 0.3 ease, top 0.3 ease;
+}
+
+.servicePane:hover .over-image{
+	top: 90%;
+	height: 10%
+}
+
+.servicePane:hover h1{
+	font-size: xx-large;
+}
+
+.over-image:hover .boldOver{
+	font-size: larger;
+}
+
+.over-image:hover .ContentOver{
+	font-size: large;
+	opacity: 1;
+	height: none;
+	margin: none;
+}
+.boldOver:hover{
+	font-size: larger;
+}
+
+.boldOver:hover .ContentOver{
+	font-size: large;
+	opacity: 1;
+	height: none;
+	margin: none;
+
+}
+
+.boldOver:hover .over-image{
+	height: 100%;
+	top: 0%;
+}
+
+.servicePane .over-image:hover{
+	top: 0%;
+	height: 100%;
+}
+/*.boldOver:hover{
 	opacity: 100%;
 	height: 100%;
 	top:0%;
@@ -188,11 +246,13 @@ p{
 	font-size: large;
 }
 
+*/
 .services-image{
 	position: absolute;
 	z-index: -1;
 	object-fit: cover;
-	width: 25%;
+	width: 100%;
+	height: 100%
 
 }
 
@@ -200,7 +260,7 @@ p{
 
 .highlights{
 	position: absolute;
-	top: 1573px;
+	top: 1873px;
 	display: flex;
 	flex-direction:row;
 	justify-content: center;
@@ -260,6 +320,11 @@ p{
 	overflow: hidden;
 }
 
+#graphicMeasure img{
+	width: 693px;
+	min-height: 851px;
+}
+
 #circle {
     max-width: 100%; /* Ensure the image doesn't exceed the container's width */
     max-height: 100%; /* Ensure the image doesn't exceed the container's height */
@@ -280,7 +345,7 @@ p{
 
 .cirlceInside {
     position: absolute; /* Position the text container absolutely within the circular container */
-    top: 46%; /* Position it vertically in the middle */
+    top: 53%; /* Position it vertically in the middle */
     left: 52%; /* Position it horizontally in the middle */
     transform: translate(-50%, -50%); /* Center-align the text container */
 }
@@ -404,64 +469,50 @@ p{
 .highlighted-symbol {
     opacity: 1; /* Full opacity for the highlighted symbol */
 }
-
 .last {
-	position: absolute;
-	top: 3175px;
-	width: 100%;
-	height: 1000px;
-	z-index: 2;
-	overflow: hidden;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+    position: absolute;
+    top: 3475px;
+    width: 100%;
+    height: 1000px;
+    z-index: 2;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e6f1ff;
 }
 
-.background-images{
-	position: relative;
-	width: 100%;
-	height: 100%;
+.background-images {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
-.hill,
-.tree {
- 	position: relative;
-  	background-size: cover;
-	height: 100%;
-	width: 100%;
+.cloud {
+    position: relative;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    background-color: #e6f1ff;
+    background-image: url('content/images/cloud.png');
+    top: -1500px;
+    transition: transform 0.3s ease;
 }
 
-.hill {
-	background-image: url('content/images/hill.png');
-  	transition: transform 0.3s ease;
-  	z-index: 1;
-  	bottom: 40%;
-}
-
-.tree {
-  background-image: url('content/images/tree.png');
-  transition: transform 0.3s ease;
-  z-index: 1;
-  top: 20%;
-  height: 90%;
-}
 
 .content-last {
-  position: relative;
-  bottom: 50%;
-  z-index: 3; /* Ensure content is on top of backgrounds */
-  padding: 20px; /* Adjust padding as needed */
-  bottom: 1850px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
+    position: relative;
+    padding: 20px;
+    /*background-color: rgba(255, 255, 255, 0.7);*/
+    text-align: center;
+    top: -1000px;
 }
 
-#button-last{
-	height: 50px;
-
+#button-last {
+    height: 50px;
 }
+
 
 
 #lastButton {
@@ -498,11 +549,11 @@ p{
 	position: absolute;
 	width: 100%;
 	background-color: #0e1724;
-	top: 4175px;
+	top: 4475px;
 	height: 200px;
   }
 
-  footer{
+footer{
 	  display: flex;
 	  flex-direction: row;
 	  align-content: center;
@@ -550,3 +601,37 @@ p{
 	font-size: small;
 	font-style: italic;
 }
+
+#submitPlace{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+#submitPlace input{
+	background-color: #0e1724;
+	width: 90%;
+	height: 20px;
+	z-index: 1;
+	color: white;
+}
+
+::placeholder{
+	opacity: 1;
+	color: white;
+}
+
+#submitPlace button{
+	z-index: 2;
+	display: flex;
+	width: 20%;
+	height: 25px;
+	background-color: darkblue;
+	color: white;
+	font-weight: bold;
+}
+
+.link{
+	color: white;
+}
+
