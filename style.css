@@ -3,6 +3,11 @@ body{
 	padding: 0;
 }
 
+.logo a{
+	text-decoration: none;
+	color: white;
+}
+
 #navBar{
 	position: fixed;
 	padding-top: 10px;
@@ -17,10 +22,6 @@ body{
 	z-index: 100;
 	left: 0;
 	right: 0;
-}
-
-#logo{
-
 }
 
 .InNavBar{
@@ -302,13 +303,24 @@ p{
         border: 1px ; /* Add a border for clarity */
 }
 
+.image-container p{
+	margin: 0px;
+	font-size: larger;
+	color: blue;
+	font-weight: bold;
+}
+
 .icon{
 	width:	30%;
 }
 
-.icon-text{
-	margin-top: 10px;
+.image-container .icon-text{
+
+	margin-top: 0px;
 	word-wrap: break-word;
+	font-style: normal;
+	color: black;
+
 }
 
 
@@ -333,6 +345,7 @@ p{
 
 #highlightsText{
 	font-size: large;
+	font-weight: bold;
 	margin-bottom: 0px;
 }
 

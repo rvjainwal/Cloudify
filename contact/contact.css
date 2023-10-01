@@ -5,8 +5,10 @@
 	padding:10% 30%;
 }
 
+
 form{
 	width: 100%;
+	margin-bottom: 100px;
 }
 
 label{
@@ -25,5 +27,34 @@ input{
 	width: 100%;
 	height: 30px;
 	word-wrap: break-word;
+	overflow-y: auto;
 }
 
+
+
+input:focus{
+	outline: none;
+}
+
+textarea{
+	height: 200px;
+	width: 100%;
+
+}
+
+.formSubmit{
+
+	width: 50%;
+	height: 50px;
+	border-radius: 10px 10px 10px 10px;
+	color: white;
+	font-weight: bold;
+	font-size: x-large;
+	background-color: #120a5a;
+	
+}
+
+
+.footer-div{
+	top: auto;
+}
