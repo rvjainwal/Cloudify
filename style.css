@@ -72,7 +72,7 @@ video {
 	align-items: center;
   	z-index: 1; /* Place the content in front of the video */
   	text-align: center;
-  	color: black;
+  	color: #000000;
 
 }
 
@@ -152,7 +152,7 @@ p{
 	align-items: center;
   	z-index: 1; /* Place the content in front of the video */
   	text-align: center;
-  	color: black;
+  	color: #000000;
   	padding: 0px 50px 0px 50px;
 	height: 350px;
 	line-height: 2.5;
@@ -299,7 +299,7 @@ p{
 	align-items: center;
   	z-index: 1;
   	text-align: center;
-  	color: black;
+  	color: #000000;
 	height: 700px;
 	line-height: 2.5;
 	background-color: #f4f6ff;
@@ -350,7 +350,7 @@ p{
 	margin-top: 0px;
 	word-wrap: break-word;
 	font-style: normal;
-	color: black;
+	color: #000000;
 
 }
 
