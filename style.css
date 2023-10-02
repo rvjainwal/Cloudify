@@ -695,7 +695,7 @@ footer{
 }
 
 
-@media(max-width: 1100px){
+@media(max-width: 1700px){
 	.highlights{
 		flex-direction: column;
 		height: 1200px;
@@ -777,7 +777,7 @@ footer{
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
 
 	p{
 		font-size: 13px;
