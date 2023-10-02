@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function slideTestimonials(direction) {
         currentIndex += direction;
-        currentIndex = Math.min(Math.max(currentIndex, 0), testimonialsContainer.childElementCount - 2); // Ensure index stays within bounds
+        currentIndex = Math.min(Math.max(currentIndex, 0), testimonialsContainer.childElementCount - 1); // Ensure index stays within bounds
         testimonialsContainer.scrollLeft = currentIndex * testimonialWidth;
 	updateSliderIndicator();
 	
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Event listeners for dot indicators
     dots.forEach((dot, index) => {
         dot.addEventListener("click", () => {
-            currentIndex = index * 2; // Multiply by 2 for two testimonials per slide
+            currentIndex = index * 1; // Multiply by 2 for two testimonials per slide
             testimonialsContainer.scrollLeft = currentIndex * testimonialWidth;
             updateSliderIndicator();
         });
@@ -49,4 +49,24 @@ window.addEventListener("scroll", function () {
             const scrollX = window.scrollX;
             const scrollY = window.scrollY;
             cloud.style.transform = `translateX(${scrollX * 0.5}px) translateY(${scrollY * 0.5}px)`;
+});
+
+// JavaScript to toggle the mobile menu
+const mobileMenuIcon = document.getElementById('mobileMenuIcon');
+const mobileNavContainer = document.getElementById('mobileNavContainer');
+const closeButton = document.getElementById('closeButton');
+
+mobileMenuIcon.addEventListener('click', () => {
+  mobileNavContainer.classList.add('active');
+});
+
+closeButton.addEventListener('click', () => {
+  mobileNavContainer.classList.remove('active');
+});
+
+// Close the mobile menu when clicking outside of it
+document.addEventListener('click', (e) => {
+  if (!mobileNavContainer.contains(e.target) && e.target !== mobileMenuIcon) {
+    mobileNavContainer.classList.remove('active');
+  }
 });

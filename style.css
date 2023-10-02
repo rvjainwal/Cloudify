@@ -24,10 +24,24 @@ body{
 	right: 0;
 }
 
+#mobileMenuIcon{
+	display: none;
+	cursor: pointer;
+	font-size: 30px;
+	color: white;
+	margin-right: 10px;
+
+}
+
+#mobileNavContainer{
+	display: none; 
+}
+
 .InNavBar{
 	display: flex;
 	font-size: 20px;
 }
+
 
 .Navlink{
 	justify-content: space-between;
@@ -685,6 +699,7 @@ footer{
 	.highlights{
 		flex-direction: column;
 		height: 1200px;
+		top: 1725px;
 	}
 	
 	#written{
@@ -712,4 +727,184 @@ footer{
 		top: 3800px;
 	}
 
+	.cloud{
+		top: -200px;
+	}
+	
+	footer .logo{
+		flex-direction: column;
+		padding-bottom: 10px;
+		height: 100px;
+		width: auto;
+	}
+	
+	.footer-content{
+		width: 250px;
+	}
+
+	.footer-content p{
+		font-size: smaller;
+	}
+	
+	.signup h1{
+		font-size: large;
+	}
+
+	.signup p{
+		font-size: smaller;
+	}
+
+	#submitPlace input{
+		width: 70%;
+	}
+	
+	#submitPlace button{
+		width: 25%;
+		font-weight: normal;
+	}
+
+	.userful h1{
+		font-size: large;
+
+	}
+	.userful p{
+		font-size: smaller;
+	}
+	
+	.footer-div{
+		top: 4600px;
+	}
 }
+
+
+@media (max-width: 768px) {
+
+	p{
+		font-size: 13px;
+	}
+  /* Hide the desktop navigation links */
+	#desktopNav {
+    	display: none;
+  	}
+
+  /* Show the hamburger menu icon on mobile */
+  	#mobileMenuIcon {
+   	 	display: block;
+  	}
+	
+	#mobileNavContainer {
+		display: block;
+    	position: fixed;
+    	top: 0;
+    	right: -300px; /* Initially hidden off the screen */
+    	width: 300px;
+    	height: 100%;
+    	background: #04011c;
+    	z-index: 200;
+    	overflow-y: auto;
+    	transition: right 0.3s ease;
+  	}
+  /* Show the mobile navigation links when the mobile menu is active */
+  	#mobileNavContainer.active{
+  		right: 0;
+	}
+
+	#mobileNav{
+		display: flex;
+		flex-direction: column;
+		font-size: 20px;
+		padding: 50px;
+	}
+
+	#mobileNav a{
+		padding-bottom: 50px;	
+	}
+
+	#closeButton {
+		display: flex;
+		justify-content: center;
+    	font-size: 50px;
+    	color: #e6e2e2;
+    	cursor: pointer;
+    	text-align: right;
+  	}
+	
+	.boldEco{
+		font-size: 20px;
+
+	}
+
+	.ContentEco{
+		font-size: 13px;
+	}
+
+	#services{
+		flex-direction: column;
+		height: 1850px;
+	}
+
+	.servicePane{
+		width: 100%;
+		height: 100%;
+	}
+
+	.highlights{
+		top: 2850px;
+	}
+	
+	#heading-highlights{
+		padding: 0px;
+	}
+
+	#content-highlights{
+		font-size: 13px;
+		padding: 20px;
+		text-align: center;
+	}
+
+	#graphicMeasure img{
+		max-width: 530px;
+		min-height: 712px;
+	}
+
+	.circleInside{
+		top: 45%;
+	}
+
+	.testimonial img{
+		height: 120px;
+	}
+
+	.testimonial{
+		flex: 0 0 calc(100% - 20px);
+	}
+
+	.last{
+		top: 4950px;
+		height: 650px;
+	}
+
+	.cloud{
+		top: -850px;
+	}
+
+	.content-last{
+		top: -500px;
+	}
+	
+	.footer-div{
+		top: 5600px;
+		height: 500px;
+	}
+
+	footer{
+		flex-direction: column;
+		align-items: normal;
+	}
+
+	footer .logo{
+		flex-direction: row;
+		padding: 10px;
+	}
+}
+
