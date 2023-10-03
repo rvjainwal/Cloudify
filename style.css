@@ -860,17 +860,17 @@ footer{
 	}
 
 	.ecosystem{
-		height: 450px;
+		height: 650px;
 	}
 
 	.ContentEco{
-		font-size: 16px;
+		font-size: x-large;
 	}
 
 	#services{
 		flex-direction: column;
-		height: 2940px;
-		top: 450px;
+		height: 3500px;
+		top: 650px;
 	}
 	
 	.boldOver{
@@ -888,16 +888,17 @@ footer{
 	}
 
 	.highlights{
-		top: 4100px;
+		top: 5250px;
+		height: 1450px;
 	}
 	
 	#heading-highlights{
 		padding: 0px;
-		font-size: xx-large;
+		font-size: xxx-large;
 	}
 
 	#content-highlights{
-		font-size: 16px;
+		font-size: x-large;
 		padding: 20px;
 		text-align: center;
 	}
@@ -910,6 +911,10 @@ footer{
 	.circleInside{
 		top: 45%;
 	}
+	
+	.testimonials{
+		top: 1450px;
+	}
 
 	.testimonial img{
 		height: 120px;
@@ -920,12 +925,12 @@ footer{
 	}
 
 	.last{
-		top: 6200px;
+		top: 7600px;
 		height: 650px;
 	}
 
 	.cloud{
-		top: -2535px;
+		top: -3200px;
 	}
 
 	.content-last{
@@ -933,7 +938,7 @@ footer{
 	}
 	
 	.footer-div{
-		top: 6850px;
+		top: 8250px;
 		height: 500px;
 	}
 
