@@ -19,6 +19,7 @@ body{
 	justify-content: space-between;
 	align-items: center;
 	height: 105px;
+	width: auto;
 	background: #04011c;
 	z-index: 100;
 	left: 0;
@@ -778,7 +779,7 @@ footer{
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 785px) {
 
 	#navBar{
 		height: 200px;
@@ -864,7 +865,7 @@ footer{
 
 	.ecosystem{
 		height: 700px;
-		width: 100%;
+		/*width: 100%;*/
 	}
 
 	.ContentEco{
