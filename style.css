@@ -961,7 +961,7 @@ footer{
 	}
 
 	#aboutButton::before{
-		font-size: xxx-large
+		font-size: xxx-large;
 	}
 
 	#aboutButton{
