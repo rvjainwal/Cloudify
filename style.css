@@ -843,6 +843,10 @@ footer{
 			cursor: pointer;
     		text-align: right;
   	}
+	
+	#mid{
+		width: 100%;
+	}
 
 	#video{
 		height: 1000px;
