@@ -599,7 +599,7 @@ p{
 }
 
 /* hover effect: move the arrow forward */
-#lastbutton:hover::before {
+#lastButton:hover::before {
 	  right: 10px; /* move the arrow forward on hover */
 }
 
@@ -958,6 +958,24 @@ footer{
 
 	p{
 		font-size: larger;	
+	}
+
+	#aboutButton::before{
+		font-size: xxx-large
+	}
+
+	#aboutButton{
+		font-size: xx-large;
+		padding: 10px 70px 10px 20px;
+	}
+
+	#lastButton::before{
+		font-size: xxx-large;
+	}
+
+	#lastButton{
+		font-size: xx-large;
+		padding-right: 70px;
 	}
 }
 
