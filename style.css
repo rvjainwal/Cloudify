@@ -3,6 +3,7 @@ body{
 	padding: 0;
 }
 
+
 .logo a{
 	text-decoration: none;
 	color: white;
@@ -861,6 +862,7 @@ footer{
 
 	.ecosystem{
 		height: 700px;
+		width: 100%;
 	}
 
 	.ContentEco{
