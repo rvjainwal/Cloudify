@@ -779,8 +779,21 @@ footer{
 
 @media (max-width: 1100px) {
 
+	#navBar{
+		height: 200px;
+	}
+	
+	.logo{
+		font-size: xxx-large;
+	}
+	
+	.logo-cloudify{
+		width: 150px;
+
+	}
+
 	p{
-		font-size: 13px;
+		font-size: 30px;
 	}
   /* Hide the desktop navigation links */
 	#desktopNav {
@@ -790,10 +803,11 @@ footer{
   /* Show the hamburger menu icon on mobile */
   	#mobileMenuIcon {
    	 	display: block;
+		font-size: xxx-large;
   	}
 	
 	#mobileNavContainer {
-		display: block;
+			display: block;
     		position: fixed;
     		top: 0;
     		right: -300px; /* Initially hidden off the screen */
@@ -812,8 +826,8 @@ footer{
 	#mobileNav{
 		display: flex;
 		flex-direction: column;
-		font-size: 20px;
-		padding: 50px;
+		font-size: 45px;
+		padding: 20px;
 	}
 
 	#mobileNav a{
@@ -821,14 +835,30 @@ footer{
 	}
 
 	#closeButton {
-		display: flex;
-		justify-content: center;
-    		font-size: 50px;
+			display: flex;
+			justify-content: center;
+    		font-size: 80px;
     		color: #e6e2e2;
-		cursor: pointer;
+			cursor: pointer;
     		text-align: right;
   	}
+
+	#video{
+		height: 1000px;
+	}
 	
+	.contentOver{
+		top: 350px;
+	}
+
+	.boldContent{
+		font-size: xxx-large;
+	}
+
+	.Content{
+		font-size: x-large;
+	}
+
 	.ecosystem{
 		height: 450px;
 	}
