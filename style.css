@@ -782,7 +782,7 @@ footer{
 @media (max-width: 785px) {
 
 	#navBar{
-		height: 200px;
+		height: 150px;
 	}
 	
 	.logo{
@@ -1029,7 +1029,7 @@ footer{
 
 
 
-@media (max-width: 447px){
+@media (max-width: 550px){
 	h1{
 		font-size: large;
 	}
@@ -1054,6 +1054,22 @@ footer{
 	#HighlightsNumber{
 		font-size: larger;
 	}
+	
+	.testimonials{
+		height: 1200px;
+	}
 
+	.last{
+		top: 7900px;
+	}
+	
+	.footer-div{
+		top: 8600px;
+		height: 900px;
+	}
+
+	#submitPlace #emailSubmit{
+		font-size: large;
+	}
 
 }
