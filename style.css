@@ -1,0 +1,920 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.logo a{
+	text-decoration: none;
+	color: white;
+}
+
+#navBar{
+	position: fixed;
+	padding-top: 10px;
+	padding-right: 3%;
+	padding-bottom: 10px;
+	padding-left: 3%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 105px;
+	background: #04011c;
+	z-index: 100;
+	left: 0;
+	right: 0;
+}
+
+#mobileMenuIcon{
+	display: none;
+	cursor: pointer;
+	font-size: 30px;
+	color: white;
+	margin-right: 10px;
+
+}
+
+#mobileNavContainer{
+	display: none; 
+}
+
+.InNavBar{
+	display: flex;
+	font-size: 20px;
+}
+
+
+.Navlink{
+	justify-content: space-between;
+	font-weight: bold;
+	white-space: nowrap;
+	padding-right: 30px;
+	justify-content: center;
+	color: white;
+	right: 10px;
+	text-decoration: none;
+}
+
+.Navlink:hover{
+	text-decoration: underline;
+}
+
+
+#video{
+	height: 600px;
+	position: relative;
+	overflow: hidden;
+}
+
+video {
+ 	position: absolute;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	height: 100%;
+  	object-fit: cover; /* Make the video cover the entire container */
+  	z-index: -1; /* Place the video behind other content */
+ 	filter: brightness(0.4); 
+}
+
+.contentOver{
+	position: absolute;
+	top: 150px;
+	width: 100%;
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items: center;
+  	z-index: 1; /* Place the content in front of the video */
+  	text-align: center;
+  	color: #000000;
+
+}
+
+.boldContent{
+	color: white;
+	font-size: 35px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.Content{
+	color: white;
+	font-size: 25px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+h1{
+	font-size: 30px;
+	font-weight: bold;
+
+}
+
+p{
+	font-size: 16px;
+	font-style: italic;
+}
+
+@media(max-width: 1100px){
+	.boldContent{
+		font-size: 25px;
+	}
+	.Content{
+		font-size: 18px;
+	}
+}
+#button-container{
+	height: 50px;
+	
+}
+
+#aboutButton {
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	border-radius: 10px;
+	background: darkblue;
+  	padding: 10px 55px 10px 20px; /* Increase left padding for arrow */
+  	border: none; /* Remove button border */
+  	position: relative;
+  	cursor: pointer;
+  	overflow: hidden;
+}
+
+/* Style the arrow icon */
+#aboutButton::before {
+	  content: "→"; /* Right arrow character */
+	  position: absolute;
+	  right: 20px; /* Initial position outside the button */
+	  top: 45%; /* Vertically center the arrow */
+	  transform: translateY(-50%); /* Adjust vertical position */
+	  opacity: 1; /* Initially visible */
+	  font-size:25px; 
+	  transition: right 0.3s ease; /* Animate right position */
+}
+
+/* Hover effect: Move the arrow forward */
+#aboutButton:hover::before {
+	  right: 10px; /* Move the arrow forward on hover */
+}
+
+.ecosystem{
+	position: absolute;
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items: center;
+  	z-index: 1; /* Place the content in front of the video */
+  	text-align: center;
+  	color: #000000;
+  	padding: 0px 50px 0px 50px;
+	height: 350px;
+	line-height: 2.5;
+
+}
+
+#services{
+	position: relative;
+	top: 350px;
+	height: 700px;
+	display: flex;
+}
+
+.servicePane{
+	position: relative;
+	width: 25%;
+}
+
+.over-image{
+	padding: 5%;
+	height: 40%;
+	background: lightblue;
+	z-index: 1;
+	position: absolute;
+	top: 60%;
+	left: 0;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	transition: height 0.3s ease, top 0.3s ease, opacity 0.3s ease;
+}
+
+.boldOver{
+	font-size: large;
+}
+
+.ContentOver{
+	font-size: medium;
+}
+
+.servicePane:hover  p{
+	opacity: 0;
+	height: 0;
+	margin: 0;
+	transition: opacity 0.3 ease, height 0.3 ease, top 0.3 ease;
+}
+
+.servicePane:hover .over-image{
+	top: 90%;
+	height: 10%
+}
+
+.servicePane:hover h1{
+	font-size: xx-large;
+}
+
+.over-image:hover .boldOver{
+	font-size: larger;
+}
+
+.over-image:hover .ContentOver{
+	font-size: large;
+	opacity: 1;
+	height: none;
+	margin: none;
+}
+.boldOver:hover{
+	font-size: larger;
+}
+
+.boldOver:hover .ContentOver{
+	font-size: large;
+	opacity: 1;
+	height: none;
+	margin: none;
+
+}
+
+.boldOver:hover .over-image{
+	height: 100%;
+	top: 0%;
+}
+
+.servicePane .over-image:hover{
+	top: 0%;
+	height: 100%;
+}
+/*.boldOver:hover{
+	opacity: 100%;
+	height: 100%;
+	top:0%;
+}
+
+.over-image:hover .boldOver{
+	font-size: larger;
+}
+
+.over-image:hover .ContentOver{
+	font-size: large;
+}
+
+*/
+
+@media(max-width: 1300px ){
+	#services{
+		height: 750px;
+	}
+	
+	.boldOver{
+		font-size: medium;
+	}
+
+	.ContentOver{
+		font-size: small;
+	}
+
+}
+
+@media(max-width: 1800px ){
+	#services{
+		min-height: 710px;
+	}
+	
+}
+
+.services-image{
+	position: absolute;
+	z-index: -1;
+	object-fit: cover;
+	width: 100%;
+	height: 100%
+
+}
+
+
+
+.highlights{
+	position: absolute;
+	top: 1700px;
+	display: flex;
+	flex-direction:row;
+	justify-content: center;
+	align-items: center;
+  	z-index: 1;
+  	text-align: center;
+  	color: #000000;
+	height: 700px;
+	line-height: 2.5;
+	background-color: #f4f6ff;
+
+}
+
+#written{
+	width: 50%;
+}
+
+#heading-highlights{
+	padding-left: 50px;
+	text-align: left;
+	margin-top: 0px;
+}
+
+#content-highlights{
+	padding-left: 50px;
+	text-align: left;
+}
+
+.images{
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+.image-container {
+        flex: 1; /* Allow each container to grow equally */
+        text-align: center; /* Center-align the content */
+        padding: 10px; /* Add some spacing around each container */
+        border: 1px ; /* Add a border for clarity */
+}
+
+.image-container p{
+	margin: 0px;
+	font-size: larger;
+	color: blue;
+	font-weight: bold;
+}
+
+.icon{
+	width:	30%;
+}
+
+.image-container .icon-text{
+
+	margin-top: 0px;
+	word-wrap: break-word;
+	font-style: normal;
+	color: #000000;
+
+}
+
+
+#graphicMeasure{
+	position: relative;
+	width:50%;
+	height: 100%;
+	text-align: center;
+	overflow: hidden;
+}
+
+#graphicMeasure img{
+	width: 693px;
+	min-height: 851px;
+}
+
+#circle {
+    max-width: 100%; /* Ensure the image doesn't exceed the container's width */
+    max-height: 100%; /* Ensure the image doesn't exceed the container's height */
+}
+
+
+#highlightsText{
+	font-size: large;
+	font-weight: bold;
+	margin-bottom: 0px;
+}
+
+#HighlightsNumber{
+	font-size: xxx-large;
+	margin: 0px;
+	color: #604fd8;
+}
+
+
+.circleInside {
+    position: absolute; /* Position the text container absolutely within the circular container */
+    top: 53%; /* Position it vertically in the middle */
+    left: 52%; /* Position it horizontally in the middle */
+    transform: translate(-50%, -50%); /* Center-align the text container */
+}
+
+
+.testimonials{
+	position: absolute;
+	top: 700px;
+	width: 100%;
+	align-items: center;
+  	text-align: center;
+	height: 900px;
+	line-height: 2.5;
+	background-color: white;
+
+}
+
+/* Style the testimonials container */
+.testimonials-container {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent testimonials from wrapping */
+    overflow: hidden; /* Hide the horizontal scrollbar */
+    scroll-snap-type: x mandatory; /* Enable snapping to each testimonial */
+    width: 100%; /* Ensure the container takes full width */
+    transition: left 0.3s ease;
+}
+
+/* Style individual testimonials */
+.testimonial {
+    flex: 0 0 calc(50% - 20px); /* Two testimonials per row with margin */
+    margin-right: 20px;
+    scroll-snap-align: start; /* Snap to the start of each testimonial */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in the width */
+    text-align: center;/* Center-align the content */
+    line-height: 1.5;
+}
+
+.testimonial-text{
+	height: 100px;
+}
+
+/* Style the company logo */
+.company-logo {
+    max-width: 100px; /* Set a max width for logos */
+    margin: 0 auto 10px; /* Center the logo vertically */
+    display: block;
+}
+
+.line {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, #333, #0000002e );/* Set line style and color */
+    width: 100%; /* Full width line */
+    margin: 10px 0; /* Add some margin to space it from text */
+    transition: right 0.3s ease;
+}
+
+/* Style symbol controls */
+.symbol-controls {
+	align-items: center;
+    margin-top: 20px; /* Increased margin */
+}
+
+/* Style the arrow text */
+.arrow-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.arrow-text {
+    font-size: 60px; /* Adjust font size */
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.arrow-button:hover .arrow-text {
+    opacity: 0.7; /* Reduce opacity on hover */
+}
+
+
+/* Style the symbol indicator */
+.symbol-indicator {
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+.dot {
+    height: 5px;
+    width: 30px;
+    background-color: #bbb;
+    display: inline-block;
+    margin: 20px 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.active-dot {
+    background-color: #333;
+}
+
+/* Style the symbol images */
+.symbol {
+	z-index: 2;
+    height: auto; /* Set the height of the symbol images */
+    width: 200px; /* Set the width of the symbol images */
+    margin: 0 5px;
+    cursor: pointer;
+    transition: opacity 0.3s ease; /* Add a transition effect to the images */
+}
+
+.symbol:hover {
+    opacity: 0.7; /* Reduce opacity on hover */
+}
+
+/* Style the highlighted symbol */
+.highlighted-symbol {
+    opacity: 1; /* Full opacity for the highlighted symbol */
+}
+.last {
+    position: absolute;
+    top: 3300px;
+    width: 100%;
+    height: 1000px;
+    z-index: 2;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #468be2;
+}
+
+.background-images {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.cloud {
+    position: relative;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    background-color: #468be2;
+    background-image: url('content/images/cloud.png');
+    top: -1500px;
+    transition: transform 0.3s ease;
+}
+
+
+.content-last {
+    position: relative;
+    padding: 20px;
+    /*background-color: rgba(255, 255, 255, 0.7);*/
+    text-align: center;
+    top: -700px;
+}
+
+#button-last {
+    height: 50px;
+}
+
+
+
+#lastButton {
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	border-radius: 10px;
+	background: darkblue;
+  	padding: 10px 55px 10px 20px; /* Increase left padding for arrow */
+  	border: none; /* Remove button border */
+  	position: relative;
+  	cursor: pointer;
+  	overflow: hidden;
+}
+
+/* Style the arrow icon */
+#lastButton::before {
+	  content: "→"; /* right arrow character */
+	  position: absolute;
+	  right: 20px; /* initial position outside the button */
+	  top: 45%; /* vertically center the arrow */
+	  transform: translatey(-50%); /* adjust vertical position */
+	  opacity: 1; /* initially visible */
+	  font-size:25px; 
+	  transition: right 0.3s ease; /* animate right position */
+}
+
+/* hover effect: move the arrow forward */
+#lastbutton:hover::before {
+	  right: 10px; /* move the arrow forward on hover */
+}
+
+.footer-div{
+	position: absolute;
+	width: 100%;
+	background-color: #04011c;
+	top: 4175px;
+	height: 200px;
+	z-index: 5;
+  }
+
+footer{
+	  display: flex;
+	  flex-direction: row;
+	  align-content: center;
+	  align-items: center;
+	  color: white;
+	  padding-left: 2%;
+	  padding-right: 2%;
+	  height: 100%;
+	  justify-content: space-between;
+}
+
+.logo{
+	display: flex;
+	flex-direction:row;
+	padding-right: 20px;
+	font-size: 30px;
+	color: white;
+	align-items: center;
+	align-content: center;
+
+}
+
+.logo-cloudify{
+	height: auto;
+	width: 120px;
+	padding-right: 20px;
+	transition: transform 0.3s ease; 
+}
+
+.logo-cloudify:hover{
+	transform: rotate(360deg);
+
+}
+
+.footerLink{
+	color: white;
+
+}
+
+.footer-content h1{
+	font-size: large;
+}
+
+.footer-content p{
+	font-size: small;
+	font-style: italic;
+}
+
+#submitPlace{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+#submitPlace input{
+	background-color: #0e1724;
+	width: 90%;
+	height: 20px;
+	z-index: 1;
+	color: white;
+}
+
+::placeholder{
+	opacity: 1;
+	color: white;
+}
+
+#submitPlace button{
+	z-index: 2;
+	display: flex;
+	width: 20%;
+	height: 25px;
+	background-color: darkblue;
+	color: white;
+	font-weight: bold;
+}
+
+.link{
+	color: white;
+}
+
+
+@media(max-width: 1700px){
+	.highlights{
+		flex-direction: column;
+		height: 1200px;
+		top: 1725px;
+	}
+	
+	#written{
+		width: 100%;
+	}
+
+	#graphicMeasure img{
+		width: 750px;
+		min-height: 920px;
+	}
+
+	#heading-highlights{
+		text-align: center;
+	}
+
+	#graphicMeasure{
+		width: 100%;
+	}
+
+	.testimonials{
+		top: 1200px;
+	}
+
+	.last{
+		top: 3800px;
+	}
+
+	.cloud{
+		top: -1300px;
+	}
+	
+	footer .logo{
+		flex-direction: column;
+		padding-bottom: 10px;
+		height: 100px;
+		width: auto;
+	}
+	
+	.footer-content{
+		width: 250px;
+	}
+
+	.footer-content p{
+		font-size: smaller;
+	}
+	
+	.signup h1{
+		font-size: large;
+	}
+
+	.signup p{
+		font-size: smaller;
+	}
+
+	#submitPlace input{
+		width: 70%;
+	}
+	
+	#submitPlace button{
+		width: 25%;
+		font-weight: normal;
+	}
+
+	.userful h1{
+		font-size: large;
+
+	}
+	.userful p{
+		font-size: smaller;
+	}
+	
+	.footer-div{
+		top: 4600px;
+	}
+}
+
+
+@media (max-width: 1100px) {
+
+	p{
+		font-size: 13px;
+	}
+  /* Hide the desktop navigation links */
+	#desktopNav {
+    	display: none;
+  	}
+
+  /* Show the hamburger menu icon on mobile */
+  	#mobileMenuIcon {
+   	 	display: block;
+  	}
+	
+	#mobileNavContainer {
+		display: block;
+    		position: fixed;
+    		top: 0;
+    		right: -300px; /* Initially hidden off the screen */
+    		width: 300px;
+    		height: 100%;
+    		background: #04011c;
+    		z-index: 200;
+    		overflow-y: auto;
+    		transition: right 0.3s ease;
+  	}
+  /* Show the mobile navigation links when the mobile menu is active */
+  	#mobileNavContainer.active{
+  		right: 0;
+	}
+
+	#mobileNav{
+		display: flex;
+		flex-direction: column;
+		font-size: 20px;
+		padding: 50px;
+	}
+
+	#mobileNav a{
+		padding-bottom: 50px;	
+	}
+
+	#closeButton {
+		display: flex;
+		justify-content: center;
+    		font-size: 50px;
+    		color: #e6e2e2;
+		cursor: pointer;
+    		text-align: right;
+  	}
+	
+	.ecosystem{
+		height: 450px;
+	}
+
+	.ContentEco{
+		font-size: 16px;
+	}
+
+	#services{
+		flex-direction: column;
+		height: 2940px;
+		top: 450px;
+	}
+	
+	.boldOver{
+		font-size: larger;
+	}
+	
+	.contentOver{
+		font-size: large;
+
+	}
+
+	.servicePane{
+		width: 100%;
+		height: 100%;
+	}
+
+	.highlights{
+		top: 4100px;
+	}
+	
+	#heading-highlights{
+		padding: 0px;
+		font-size: xx-large;
+	}
+
+	#content-highlights{
+		font-size: 16px;
+		padding: 20px;
+		text-align: center;
+	}
+
+	#graphicMeasure img{
+		max-width: 530px;
+		min-height: 712px;
+	}
+
+	.circleInside{
+		top: 45%;
+	}
+
+	.testimonial img{
+		height: 120px;
+	}
+
+	.testimonial{
+		flex: 0 0 calc(100% - 20px);
+	}
+
+	.last{
+		top: 6200px;
+		height: 650px;
+	}
+
+	.cloud{
+		top: -2535px;
+	}
+
+	.content-last{
+		top: -500px;
+	}
+	
+	.footer-div{
+		top: 6850px;
+		height: 500px;
+	}
+
+	footer{
+		flex-direction: column;
+		align-items: normal;
+	}
+
+	footer .logo{
+		flex-direction: row;
+		padding: 10px;
+	}
+}
+
