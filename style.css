@@ -914,6 +914,7 @@ footer{
 	
 	.testimonials{
 		top: 1450px;
+		height: 1000px;
 	}
 
 	.testimonial img{
@@ -923,10 +924,14 @@ footer{
 	.testimonial{
 		flex: 0 0 calc(100% - 20px);
 	}
+	
+	.testimonial-text{
+		height: 150px;
+	}
 
 	.last{
-		top: 7600px;
-		height: 650px;
+		top: 7700px;
+		height: 700px;
 	}
 
 	.cloud{
@@ -934,13 +939,51 @@ footer{
 	}
 
 	.content-last{
-		top: -500px;
+		top: -600px;
 	}
 	
 	.footer-div{
-		top: 8250px;
-		height: 500px;
+		top: 8400px;
+		height: 700px;
 	}
+	
+	.footer-div h1{
+		font-size: xx-large;
+	}
+
+	.footer-div p{
+		font-size: large;
+		width: 70%;
+	}
+	
+	.footer-content{
+		width: 70%;
+	}
+
+	#submitPlace{
+		justify-content: left;
+	}
+
+	#submitPlace input{
+		font-size: larger;
+		height: 40px;
+		width: 60%;
+	}
+	
+	#submitPlace #emailSubmit{
+		width: 10%;
+		font-weight: bold;
+		font-size: larger;
+		height: 45px;
+	}
+
+	#submitPlace #emailSubmit{
+		text-align: center; /* Center text horizontally */
+ 	 	vertical-align: middle; /* Center text vertically */
+  		line-height: normal; /* Reset the line-height to normal */
+ 	 	padding: 10px 10px;
+	}
+
 
 	footer{
 		flex-direction: column;
@@ -957,7 +1000,7 @@ footer{
 	}
 
 	p{
-		font-size: larger;	
+		font-size: x-larger;	
 	}
 
 	#aboutButton::before{
