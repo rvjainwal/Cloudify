@@ -1033,9 +1033,13 @@ footer{
 	h1{
 		font-size: large;
 	}
+	
+	.circleInside{
+		top: 35%
+	}
 
-	p{
-		font-size: small;
+	.ecosystem .ContentEco{
+		font-size: large;
 	}
 
 	.highlights #graphicMeasure #circle{
