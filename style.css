@@ -777,18 +777,18 @@ footer{
 }
 
 
-@media (max-width: 1100px) {
+@media (max-width: 700px) {
 
 	#navBar{
 		height: 200px;
 	}
 	
 	.logo{
-		font-size: xxx-large;
+		font-size: xx-large;
 	}
 	
 	.logo-cloudify{
-		width: 150px;
+		width: 120px;
 
 	}
 
@@ -852,33 +852,33 @@ footer{
 	}
 
 	.boldContent{
-		font-size: xxx-large;
+		font-size: xx-large;
 	}
 
 	.Content{
-		font-size: x-large;
+		font-size: larger;
 	}
 
 	.ecosystem{
-		height: 650px;
+		height: 700px;
 	}
 
 	.ContentEco{
-		font-size: x-large;
+		font-size: larger;
 	}
 
 	#services{
 		flex-direction: column;
 		height: 3500px;
-		top: 650px;
+		top: 700px;
 	}
 	
 	.boldOver{
-		font-size: xxx-large;
+		font-size: xx-large;
 	}
 	
 	.ContentOver{
-		font-size: x-large;
+		font-size: larger;
 
 	}
 
@@ -894,11 +894,11 @@ footer{
 	
 	#heading-highlights{
 		padding: 0px;
-		font-size: xxx-large;
+		font-size: xx-large;
 	}
 
 	#content-highlights{
-		font-size: x-large;
+		font-size: large;
 		padding: 20px;
 		text-align: center;
 	}
@@ -967,11 +967,11 @@ footer{
 	#submitPlace input{
 		font-size: larger;
 		height: 40px;
-		width: 60%;
+		width: 70%;
 	}
 	
 	#submitPlace #emailSubmit{
-		width: 10%;
+		width: 20%;
 		font-weight: bold;
 		font-size: larger;
 		height: 45px;
@@ -996,28 +996,28 @@ footer{
 	}
 
 	h1{
-		font-size: xxx-large;
+		font-size: xx-large;
 	}
 
 	p{
-		font-size: x-larger;	
+		font-size: larger;	
 	}
 
 	#aboutButton::before{
-		font-size: xxx-large;
+		font-size: xx-large;
 	}
 
 	#aboutButton{
-		font-size: xx-large;
-		padding: 10px 70px 10px 20px;
+		font-size: x-large;
+		padding: 10px 60px 10px 20px;
 	}
 
 	#lastButton::before{
-		font-size: xxx-large;
+		font-size: xx-large;
 	}
 
 	#lastButton{
-		font-size: xx-large;
+		font-size: larger;
 		padding-right: 70px;
 	}
 }
