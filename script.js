@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
     testimonialsContainer.addEventListener("touchend", (e) => {
         touchEndX = e.changedTouches[0].clientX;
         const swipeDistance = touchStartX - touchEndX;
-        const minSwipeDistance = 50; // Adjust this value to control the sensitivity
+        const minSwipeDistance = 100; // Adjust this value to control the sensitivity
         
         if (swipeDistance > minSwipeDistance) {
             // Swiped to the right (move to the next testimonial)
