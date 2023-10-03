@@ -844,11 +844,11 @@ footer{
 	}
 	
 	.boldOver{
-		font-size: larger;
+		font-size: xxx-large;
 	}
 	
-	.contentOver{
-		font-size: large;
+	.ContentOver{
+		font-size: x-large;
 
 	}
 
@@ -915,6 +915,14 @@ footer{
 	footer .logo{
 		flex-direction: row;
 		padding: 10px;
+	}
+
+	h1{
+		font-size: xxx-large;
+	}
+
+	p{
+		font-size: larger;	
 	}
 }
 
