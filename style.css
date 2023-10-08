@@ -799,7 +799,7 @@ footer{
 
 }
 
-@media (max-width: 785px) {
+@media (max-width: 1000px) {
 
 	#navBar{
 		height: 120px;
@@ -1106,7 +1106,6 @@ footer{
 		min-height: 710px;
 	}
 	
-
-
-
 }
+
+/*TODO: circle in alignement , check overimage words;*/
