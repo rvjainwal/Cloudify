@@ -95,12 +95,14 @@ textarea{
 	justify-content: space-between;
 	height: 300px;
 	
+	
 }
 
 .checkboxOption{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	text-align: left;
 }
 
 
@@ -109,11 +111,9 @@ textarea{
 }
 
 .checkboxOption div{
-	display: block;
-	width: 50%;
 	text-align: left;
-	padding-left: 20px;
 }
+
 
 
 

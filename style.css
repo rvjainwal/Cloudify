@@ -3,6 +3,12 @@ body{
 	padding: 0;
 }
 
+
+.logo a{
+	text-decoration: none;
+	color: white;
+}
+
 #navBar{
 	position: fixed;
 	padding-top: 10px;
@@ -13,20 +19,31 @@ body{
 	justify-content: space-between;
 	align-items: center;
 	height: 105px;
-	background: black;
+	width: auto;
+	background: #04011c;
 	z-index: 100;
 	left: 0;
 	right: 0;
 }
 
-#logo{
+#mobileMenuIcon{
+	display: none;
+	cursor: pointer;
+	font-size: 30px;
+	color: white;
+	margin-right: 10px;
 
+}
+
+#mobileNavContainer{
+	display: none; 
 }
 
 .InNavBar{
 	display: flex;
 	font-size: 20px;
 }
+
 
 .Navlink{
 	justify-content: space-between;
@@ -71,7 +88,7 @@ video {
 	align-items: center;
   	z-index: 1; /* Place the content in front of the video */
   	text-align: center;
-  	color: black;
+  	color: #000000;
 
 }
 
@@ -100,6 +117,14 @@ p{
 	font-style: italic;
 }
 
+@media(max-width: 1100px){
+	.boldContent{
+		font-size: 25px;
+	}
+	.Content{
+		font-size: 18px;
+	}
+}
 #button-container{
 	height: 50px;
 	
@@ -143,7 +168,7 @@ p{
 	align-items: center;
   	z-index: 1; /* Place the content in front of the video */
   	text-align: center;
-  	color: black;
+  	color: #000000;
   	padding: 0px 50px 0px 50px;
 	height: 350px;
 	line-height: 2.5;
@@ -152,7 +177,7 @@ p{
 
 #services{
 	position: relative;
-	top: 400px;
+	top: 350px;
 	height: 700px;
 	display: flex;
 }
@@ -193,8 +218,8 @@ p{
 }
 
 .servicePane:hover .over-image{
-	top: 90%;
-	height: 10%
+	top: 70%;
+	height: 30%
 }
 
 .servicePane:hover h1{
@@ -226,6 +251,7 @@ p{
 .boldOver:hover .over-image{
 	height: 100%;
 	top: 0%;
+
 }
 
 .servicePane .over-image:hover{
@@ -247,12 +273,25 @@ p{
 }
 
 */
+
+
+
+@media(max-width: 1800px ){
+	#services{
+		min-height: 710px;
+	}
+	
+
+}
+
+
+
 .services-image{
 	position: absolute;
 	z-index: -1;
 	object-fit: cover;
 	width: 100%;
-	height: 100%
+	height: auto;
 
 }
 
@@ -260,14 +299,14 @@ p{
 
 .highlights{
 	position: absolute;
-	top: 1873px;
+	top: 1700px;
 	display: flex;
 	flex-direction:row;
 	justify-content: center;
 	align-items: center;
   	z-index: 1;
   	text-align: center;
-  	color: black;
+  	color: #000000;
 	height: 700px;
 	line-height: 2.5;
 	background-color: #f4f6ff;
@@ -302,13 +341,24 @@ p{
         border: 1px ; /* Add a border for clarity */
 }
 
+.image-container p{
+	margin: 0px;
+	font-size: larger;
+	color: blue;
+	font-weight: bold;
+}
+
 .icon{
 	width:	30%;
 }
 
-.icon-text{
-	margin-top: 10px;
+.image-container .icon-text{
+
+	margin-top: 0px;
 	word-wrap: break-word;
+	font-style: normal;
+	color: #000000;
+
 }
 
 
@@ -333,6 +383,7 @@ p{
 
 #highlightsText{
 	font-size: large;
+	font-weight: bold;
 	margin-bottom: 0px;
 }
 
@@ -343,7 +394,7 @@ p{
 }
 
 
-.cirlceInside {
+.circleInside {
     position: absolute; /* Position the text container absolutely within the circular container */
     top: 53%; /* Position it vertically in the middle */
     left: 52%; /* Position it horizontally in the middle */
@@ -471,7 +522,7 @@ p{
 }
 .last {
     position: absolute;
-    top: 3475px;
+    top: 3300px;
     width: 100%;
     height: 1000px;
     z-index: 2;
@@ -479,7 +530,7 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #e6f1ff;
+    background-color: #468be2;
 }
 
 .background-images {
@@ -494,7 +545,7 @@ p{
     background-size: cover;
     height: 100%;
     width: 100%;
-    background-color: #e6f1ff;
+    background-color: #468be2;
     background-image: url('content/images/cloud.png');
     top: -1500px;
     transition: transform 0.3s ease;
@@ -506,7 +557,7 @@ p{
     padding: 20px;
     /*background-color: rgba(255, 255, 255, 0.7);*/
     text-align: center;
-    top: -1000px;
+    top: -700px;
 }
 
 #button-last {
@@ -530,27 +581,28 @@ p{
 
 /* Style the arrow icon */
 #lastButton::before {
-	  content: "→"; /* Right arrow character */
+	  content: "→"; /* right arrow character */
 	  position: absolute;
-	  right: 20px; /* Initial position outside the button */
-	  top: 45%; /* Vertically center the arrow */
-	  transform: translateY(-50%); /* Adjust vertical position */
-	  opacity: 1; /* Initially visible */
+	  right: 20px; /* initial position outside the button */
+	  top: 45%; /* vertically center the arrow */
+	  transform: translatey(-50%); /* adjust vertical position */
+	  opacity: 1; /* initially visible */
 	  font-size:25px; 
-	  transition: right 0.3s ease; /* Animate right position */
+	  transition: right 0.3s ease; /* animate right position */
 }
 
-/* Hover effect: Move the arrow forward */
+/* hover effect: move the arrow forward */
 #lastButton:hover::before {
-	  right: 10px; /* Move the arrow forward on hover */
+	  right: 10px; /* move the arrow forward on hover */
 }
 
 .footer-div{
 	position: absolute;
 	width: 100%;
-	background-color: #0e1724;
-	top: 4475px;
+	background-color: #04011c;
+	top: 4175px;
 	height: 200px;
+	z-index: 5;
   }
 
 footer{
@@ -635,3 +687,425 @@ footer{
 	color: white;
 }
 
+
+@media(max-width: 1700px){
+	.highlights{
+		flex-direction: column;
+		height: 1200px;
+		top: 1725px;
+	}
+	
+	#written{
+		width: 100%;
+	}
+
+	#graphicMeasure img{
+		width: 750px;
+		min-height: 920px;
+	}
+
+	#heading-highlights{
+		text-align: center;
+	}
+
+	#graphicMeasure{
+		width: 100%;
+	}
+
+	.testimonials{
+		top: 1200px;
+	}
+
+	.last{
+		top: 3800px;
+	}
+
+	.cloud{
+		top: -1300px;
+	}
+	
+	footer .logo{
+		flex-direction: column;
+		padding-bottom: 10px;
+		height: 100px;
+		width: auto;
+	}
+	
+	.footer-content{
+		width: 250px;
+	}
+
+	.footer-content p{
+		font-size: smaller;
+	}
+	
+	.signup h1{
+		font-size: large;
+	}
+
+	.signup p{
+		font-size: smaller;
+	}
+
+	#submitPlace input{
+		width: 70%;
+	}
+	
+	#submitPlace button{
+		width: 25%;
+		font-weight: normal;
+	}
+
+	.userful h1{
+		font-size: large;
+
+	}
+	.userful p{
+		font-size: smaller;
+	}
+	
+	.footer-div{
+		top: 4600px;
+	}
+}
+
+@media(max-width: 1300px ){
+	#services{
+		height: 600px;
+		min-height: 400px;
+	}
+	.over-image{
+		top: 30%;
+		justify-content: unset;
+
+	}
+	.boldOver{
+		font-size: medium;
+	}
+
+	.ContentOver{
+		font-size: small;
+	}
+
+	.highlights{
+		top: 1390px;
+	}
+	
+	.servicePane:hover .over-image{
+		top: 0;
+	}
+
+
+
+}
+
+@media (max-width: 1000px) {
+
+	#navBar{
+		height: 120px;
+	}
+	
+	.logo{
+		font-size: xx-large;
+	}
+	
+	.logo-cloudify{
+		width: 120px;
+
+	}
+
+	p{
+		font-size: 30px;
+	}
+  /* Hide the desktop navigation links */
+	#desktopNav {
+    	display: none;
+  	}
+
+  /* Show the hamburger menu icon on mobile */
+  	#mobileMenuIcon {
+   	 	display: block;
+		font-size: xx-large;
+  	}
+	
+	#mobileNavContainer {
+			display: block;
+    		position: fixed;
+    		top: 0;
+    		right: -300px; /* Initially hidden off the screen */
+    		width: 300px;
+    		height: 100%;
+    		background: #04011c;
+    		z-index: 200;
+    		overflow-y: auto;
+    		transition: right 0.3s ease;
+  	}
+  /* Show the mobile navigation links when the mobile menu is active */
+  	#mobileNavContainer.active{
+  		right: 0;
+	}
+
+	#mobileNav{
+		display: flex;
+		flex-direction: column;
+		font-size: 45px;
+		padding: 20px;
+	}
+
+	#mobileNav a{
+		padding-bottom: 50px;	
+	}
+
+	#closeButton {
+			display: flex;
+			justify-content: center;
+    		font-size: 80px;
+    		color: #e6e2e2;
+			cursor: pointer;
+    		text-align: right;
+  	}
+	
+	#video{
+		height: 1000px;
+		width: 100%;
+		max-width: 100%;
+	}
+	
+	.contentOver{
+		top: 350px;
+	}
+
+	.boldContent{
+		font-size: xx-large;
+	}
+
+	.Content{
+		font-size: larger;
+	}
+
+	.ecosystem{
+		height: 700px;
+		/*width: 100%;*/
+	}
+
+	.ContentEco{
+		font-size: larger;
+	}
+
+	#services{
+		flex-direction: column;
+		height: 3550px;
+		top: 700px;
+	}
+	
+	.boldOver{
+		font-size: x-large;
+	}
+	
+	.ContentOver{
+		font-size: large;
+
+	}
+
+	.servicePane{
+		width: 100%;
+		height: 100%;
+	}
+
+	.highlights{
+		top: 5250px;
+		height: 1450px;
+	}
+	
+	#heading-highlights{
+		padding: 0px;
+		font-size: x-large;
+	}
+
+	#content-highlights{
+		font-size: large;
+		padding: 20px;
+		text-align: center;
+	}
+
+	#graphicMeasure img{
+		max-width: 530px;
+		min-height: 712px;
+	}
+
+	.circleInside{
+		top: 45%;
+	}
+	
+	.testimonials{
+		top: 1450px;
+		height: 1000px;
+	}
+
+	.testimonial img{
+		height: 120px;
+	}
+
+	.testimonial{
+		flex: 0 0 calc(100% - 20px);
+	}
+	
+	.testimonial-text{
+		height: 150px;
+	}
+
+	.last{
+		top: 7700px;
+		height: 700px;
+	}
+
+	.cloud{
+		top: -3400px;
+	}
+
+	.content-last{
+		top: -600px;
+	}
+	
+	.footer-div{
+		top: 8400px;
+		height: 700px;
+	}
+	
+	.footer-div h1{
+		font-size: xx-large;
+	}
+
+	.footer-div p{
+		font-size: large;
+		width: 70%;
+	}
+	
+	.footer-content{
+		width: 70%;
+	}
+
+	#submitPlace{
+		justify-content: left;
+	}
+
+	#submitPlace input{
+		font-size: larger;
+		height: 40px;
+		width: 70%;
+	}
+	
+	#submitPlace #emailSubmit{
+		width: 20%;
+		font-weight: bold;
+		font-size: larger;
+		height: 45px;
+	}
+
+	#submitPlace #emailSubmit{
+		text-align: center; /* Center text horizontally */
+ 	 	vertical-align: middle; /* Center text vertically */
+  		line-height: normal; /* Reset the line-height to normal */
+ 	 	padding: 10px 10px;
+	}
+
+
+	footer{
+		flex-direction: column;
+		align-items: normal;
+	}
+
+	footer .logo{
+		flex-direction: row;
+		padding: 10px;
+	}
+
+	h1{
+		font-size: xx-large;
+	}
+
+	p{
+		font-size: larger;	
+	}
+
+	#aboutButton::before{
+		font-size: xx-large;
+	}
+
+	#aboutButton{
+		font-size: x-large;
+		padding: 10px 60px 10px 20px;
+	}
+
+	#lastButton::before{
+		font-size: xx-large;
+	}
+
+	#lastButton{
+		font-size: larger;
+		padding-right: 70px;
+	}
+}
+
+
+
+@media (max-width: 550px){
+	h1{
+		font-size: large;
+	}
+	
+	p{
+		font-size: medium;
+	}
+	
+	.footer-content{
+		width: 100%;
+	}
+
+	.circleInside{
+		top: 35%
+	}
+
+	.ecosystem .ContentEco{
+		font-size: medium;
+	}
+
+	.highlights #graphicMeasure #circle{
+		max-width: 100%;
+		min-height: auto;
+	}
+	
+	#HighlightsNumber{
+		font-size: larger;
+	}
+	
+	.testimonials{
+		height: 1200px;
+	}
+
+	.last{
+		top: 7900px;
+	}
+	
+	.footer-div{
+		top: 8600px;
+		height: 900px;
+	}
+
+	#submitPlace #emailSubmit{
+		font-size: large;
+	}
+
+	.over-image{
+		justify-content: center;
+		top: 60%;
+
+	}
+	
+	#services{
+		min-height: 710px;
+	}
+	
+}
+
+/*TODO: circle in alignement , check overimage words;*/
