@@ -22,7 +22,8 @@
 
 form{
 	width: 100%;
-	margin-bottom: 100px;
+	height: auto;
+	margin-bottom: 0px;
 }
 
 label{
@@ -94,6 +95,8 @@ textarea{
 	flex-direction: column;
 	justify-content: space-between;
 	height: 300px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	
 }
 
@@ -115,6 +118,54 @@ textarea{
 	padding-left: 20px;
 }
 
+#webDev{
+	position: static;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 300px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#digitalMarketing{
+	position: static;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 300px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#Ai{
+	position: static;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	margin: 0px;
+}
+
+
+.checkboxOptionAi .checkboxOption{
+	display: block;
+	width: 50%;
+	text-align: left;
+	padding-left: 20px;
+}
+
+
+#hosting{
+	position: static;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 300px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
 
 
 
