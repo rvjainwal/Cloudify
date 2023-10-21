@@ -70,8 +70,12 @@ appDevelopmentOption.addEventListener("change", function(){
 
 graphicDesignOption.addEventListener("change", function(){
 	if (graphicDesignOption.checked){
-		
+		document.getElementById('Design').style.display = "inline-block";
+		document.getElementById('design').style.display = "flex";
+
 	}else{
+		document.getElementById('Design').style.display = "none";
+		document.getElementById('design').style.display = "none";
 
 	}
 });

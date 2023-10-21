@@ -45,6 +45,8 @@ input{
 	height: 30px;
 	word-wrap: break-word;
 	overflow-y: auto;
+	font-size: large;
+	color: grey;
 }
 
 
@@ -98,7 +100,6 @@ textarea{
 	justify-content: space-between;
 	height: 300px;
 	padding-top: 20px;
-	padding-bottom: 20px;
 	padding-left: 10px;
 	
 }
@@ -178,6 +179,22 @@ textarea{
 	width: 100%;
 }
 
+#design{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding-top: 20px;
+	padding-left: 10px;
+	padding-bottom: 20px;
+	height: 100px;
+}
+
+
+
+
+
+
+
 #website{
 	display: none;
 }
@@ -209,6 +226,15 @@ textarea{
 #hosting{
 	display: none;
 }
+
+#Design{
+	display: none;
+}
+
+#design{
+	display: none;
+}
+
 @media (max-width: 1000px) {
  /* Hide the desktop navigation links */
 	#desktopNav {
