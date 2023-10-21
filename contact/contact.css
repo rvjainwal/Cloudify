@@ -28,9 +28,11 @@ form{
 
 label{
 	font-size: large;
-	display: block;
+	display: inline-block;
 	margin-bottom: 0px;
 	margin-top: 20px;
+	color: #00000f;
+	font-weight: bold;
 	font-family: 'Rubik',sans-serif;
 }
 
@@ -97,6 +99,7 @@ textarea{
 	height: 300px;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	padding-left: 10px;
 	
 }
 
@@ -104,6 +107,7 @@ textarea{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	text-align: left;
 }
 
 
@@ -113,9 +117,9 @@ textarea{
 
 .checkboxOption div{
 	display: block;
-	width: 50%;
 	text-align: left;
-	padding-left: 20px;
+	width: 50%;
+	/*padding-left: 20px;*/
 }
 
 #webDev{
@@ -123,9 +127,10 @@ textarea{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	height: 300px;
+	height: 200px;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	padding-left: 10px;
 }
 
 #digitalMarketing{
@@ -133,9 +138,10 @@ textarea{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	height: 300px;
+	height: 200px;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	padding-left: 10px;
 }
 
 #Ai{
@@ -151,9 +157,9 @@ textarea{
 
 .checkboxOptionAi .checkboxOption{
 	display: block;
-	width: 50%;
 	text-align: left;
 	padding-left: 20px;
+	width: 300px;
 }
 
 
@@ -162,13 +168,47 @@ textarea{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	height: 300px;
+	height: 200px;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
 
+.checkboxOptionAi div{
+	padding-top: 10px;
+	width: 100%;
+}
 
+#website{
+	display: none;
+}
 
+#webDev{
+	display: none;
+}
+
+#Digital{
+ display: none;
+}
+
+#digitalMarketing{
+	display: none;
+}
+
+#AI{
+	display: none;
+}
+
+#Ai{
+	display: none;
+}
+
+#Hosting{
+	display: none;
+}
+
+#hosting{
+	display: none;
+}
 @media (max-width: 1000px) {
  /* Hide the desktop navigation links */
 	#desktopNav {
