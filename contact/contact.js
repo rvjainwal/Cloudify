@@ -15,7 +15,6 @@ const hostingOption = document.getElementById('option9');
 const otherOption = document.getElementById('option10');
 
 const websiteOption = document.getElementsByClassName('website');
-const webDevOption = 
 
 mobileMenuIcon.addEventListener('click', () => {
   mobileNavContainer.classList.add('active');
