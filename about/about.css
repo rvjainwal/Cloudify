@@ -118,6 +118,20 @@ h3{
 	display: static;
 }
 
+#join{
+	position: absolute;
+	z-index: -1;
+	right: 0%;
+	width: 800px;
+	height: 600px;
+
+}
+
+.journey p{
+	margin: 10px;
+	width: 50%;
+}
+
 
 @media (max-width: 1000px) {
  /* Hide the desktop navigation links */
