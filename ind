@@ -6,7 +6,6 @@
 		<title>Cloudify Techs</title>
 		<link rel="stylesheet" href="./style.css" />
 		<link rel="stylesheet" href="./animation.css" />
-		<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 	</head>
 	<body>
 		<nav id="navBar" >
@@ -16,7 +15,7 @@
 			<div class="InNavBar" id="desktopNav">
 				<a class="Navlink" href="#">Home</a>
 				<a  class="Navlink" href="/about">About</a>
-				<a  class="Navlink" href="request/request.html">Form</a>
+				<a  class="Navlink" href="contact/contact.html">Contact</a>
 				<a class="Navlink" href="/EcoSystem">EcoSystem</a>
 			</div>
 			<div id="mobileMenuIcon">&#9776;</div>
@@ -25,7 +24,7 @@
   				<div class="InNavBar" id="mobileNav">
     					<a class="Navlink" href="#">Home</a>
 					<a class="Navlink" href="/about">About</a>
-					<a class="Navlink" href="request/request.html">Contact</a>
+					<a class="Navlink" href="contact/contact.html">Contact</a>
 					<a class="Navlink" href="/EcoSystem">EcoSystem</a>
   				</div>
 			</div>
@@ -107,10 +106,10 @@
 						</div>
 					</div>
 					<div id="graphicMeasure">
+						<image src="./content/images/circle.png" id="circle"/>
 						<div class="circleInside">
-							
 							<p id="highlightsText" >Users Signed up</p>
-							<h1 class="count" id="HighlightsNumber">500,000</h1>
+							<h1 id="HighlightsNumber">500,000+</h1>
 						</div>
 					</div>
 			<div class="testimonials">

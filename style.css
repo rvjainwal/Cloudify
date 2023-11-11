@@ -123,8 +123,8 @@ p{
 
 .ContentEco{
 	margin: 0px;
-	padding-left: 100px;
-	padding-right: 100px;
+	padding-left: 150px;
+	padding-right: 150px;
 }
 
 
@@ -183,7 +183,7 @@ p{
   	color: #000000;
   	padding: 0px 50px 0px 50px;
 	height: 350px;
-	line-height: 2.5;
+	line-height: 1.8;
 
 }
 
@@ -390,20 +390,27 @@ p{
 	min-height: 851px;
 }
 
-#circle {
-    max-width: 100%; /* Ensure the image doesn't exceed the container's width */
-    max-height: 100%; /* Ensure the image doesn't exceed the container's height */
+
+
+.circleInside {
+	display: flex;
+	border: 30px #604fd8 solid;
+	border-radius: 50%;
+	flex-direction: column;
+	justify-content: center;
+	width: 50%;
+	aspect-ratio: 1/1;
+
 }
 
-
 #highlightsText{
-	font-size: large;
+	font-size: x-large;
 	font-weight: bold;
 	margin-bottom: 0px;
 }
 
 #HighlightsNumber{
-	font-size: xxx-large;
+	font-size: 70px;
 	margin: 0px;
 	color: #604fd8;
 }
@@ -704,41 +711,11 @@ footer{
 
 
 @media(max-width: 1700px){
-	.highlights{
-		flex-direction: column;
-		height: 1200px;
-		top: 1725px;
-	}
-	
-	#written{
-		width: 100%;
-	}
-
-	#graphicMeasure img{
-		width: 750px;
-		min-height: 920px;
-	}
 
 	#heading-highlights{
 		text-align: center;
 	}
 
-	#graphicMeasure{
-		width: 100%;
-	}
-
-	.testimonials{
-		top: 1200px;
-	}
-
-	.last{
-		top: 3800px;
-	}
-
-	.cloud{
-		top: -1300px;
-	}
-	
 	footer .logo{
 		flex-direction: column;
 		padding-bottom: 10px;
@@ -778,10 +755,6 @@ footer{
 	.userful p{
 		font-size: smaller;
 	}
-	
-	.footer-div{
-		top: 4600px;
-	}
 }
 
 @media(max-width: 1300px ){
@@ -790,7 +763,6 @@ footer{
 		min-height: 400px;
 	}
 	.over-image{
-		top: 30%;
 		justify-content: unset;
 
 	}
@@ -803,14 +775,21 @@ footer{
 	}
 
 	.highlights{
-		top: 1390px;
+		top: 1600px;
 	}
 	
 	.servicePane:hover .over-image{
 		top: 0;
 	}
-
-
+	
+	.last {
+		top: 3200px;
+	}
+	
+	.footer-div {
+		top: 4200px;
+		height: 254px;
+	}
 
 }
 
@@ -930,6 +909,15 @@ footer{
 	.highlights{
 		top: 5250px;
 		height: 1450px;
+		flex-direction: column;
+	}
+	
+	#written{
+		width: 100%;
+	}
+	
+	#graphicMeasure{
+		width: 100%;
 	}
 	
 	#heading-highlights{
