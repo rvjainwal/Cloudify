@@ -552,7 +552,7 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #468be2;
+    background-color: #f4f6ff;
 }
 
 .background-images {
@@ -567,8 +567,8 @@ p{
     background-size: cover;
     height: 100%;
     width: 100%;
-    background-color: #468be2;
-    background-image: url('content/images/cloud.png');
+    /*background-color: #468be2;*/
+    /*background-image: url('content/images/cloud.png');*/
     top: -1500px;
     transition: transform 0.3s ease;
 }
@@ -680,26 +680,38 @@ footer{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	align-items: center;
+	border: white solid;
+	border-radius: 30px;
+	height: 40px;
+	padding-right: 5px;
 }
 
 #submitPlace input{
-	background-color: #0e1724;
-	width: 90%;
+	width: 60%;
+	background-color: transparent;
 	height: 20px;
 	z-index: 1;
+	border: none;
+	outline:  none;
 	color: white;
+	padding-left: 5%;
 }
 
-::placeholder{
+#email::placeholder{
+	color: white ;
 	opacity: 1;
-	color: white;
 }
 
 #submitPlace button{
 	z-index: 2;
 	display: flex;
-	width: 20%;
+	justify-content: center;
+	align-items: center;
+	width: 30%;
 	height: 25px;
+	border: none;
+	border-radius: 20px;
 	background-color: darkblue;
 	color: white;
 	font-weight: bold;
@@ -775,15 +787,11 @@ footer{
 	}
 
 	.highlights{
-		top: 1600px;
-	}
-	
-	.servicePane:hover .over-image{
-		top: 0;
+		top: 1750px;
 	}
 	
 	.last {
-		top: 3200px;
+		top: 3350px;
 	}
 	
 	.footer-div {
@@ -793,8 +801,37 @@ footer{
 
 }
 
-@media (max-width: 1000px) {
+@media (min-width: 1000px)and (max-width: 1200px){
+	#services {
+		display: grid;
+		grid-template-columns: 50% 50%;
+		height: 1200px;
+	}
 
+	.servicePane {
+		width: auto;
+	}
+
+	.highlights {
+		top: 2350px;
+	}
+	
+	.last {
+		top: 3950px;
+	}
+
+	.footer-div {
+		top: 4950px;
+	}
+}
+
+@media (max-width: 1000px) {
+	
+	.ContentEco {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	
 	#navBar{
 		height: 120px;
 	}
@@ -823,7 +860,7 @@ footer{
   	}
 	
 	#mobileNavContainer {
-			display: block;
+		display: block;
     		position: fixed;
     		top: 0;
     		right: -300px; /* Initially hidden off the screen */
@@ -985,17 +1022,37 @@ footer{
 	}
 	
 	.footer-content{
-		width: 70%;
+		width: 100%;
+	}
+	
+	.footer-content p{
+		margin-top: 0px;
+	}
+
+	.footer-content h1{
+		margin-top: 0px;
+		margin-bottom: 10px;
+	}
+	
+	.signup h1{
+		margin: 0px;
+		margin-bottom: 10px;
+	}
+
+	.signup p{
+		margin-top: 0px;
 	}
 
 	#submitPlace{
 		justify-content: left;
+		height: 60px;
+		width: 70%;
 	}
 
 	#submitPlace input{
 		font-size: larger;
 		height: 40px;
-		width: 70%;
+		width: 75%;
 	}
 	
 	#submitPlace #emailSubmit{
@@ -1004,14 +1061,17 @@ footer{
 		font-size: larger;
 		height: 45px;
 	}
-
+	
 	#submitPlace #emailSubmit{
 		text-align: center; /* Center text horizontally */
  	 	vertical-align: middle; /* Center text vertically */
   		line-height: normal; /* Reset the line-height to normal */
  	 	padding: 10px 10px;
 	}
-
+	
+	.userful h1{
+		margin-top: 0px;
+	}
 
 	footer{
 		flex-direction: column;
@@ -1111,6 +1171,22 @@ footer{
 	
 }
 
+.links {
+	display: grid;
+	grid-template-columns: auto auto;
+}
 
+.userful h1{
+	margin-top: 10px;
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+.links p {
+	margin: 5px;
+	font-size: 15px;
+}
 
+.social-media i{
+	color: white;
+}
 /*TODO: circle in alignement , check overimage words;*/

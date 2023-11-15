@@ -11,6 +11,7 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	
 	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
 	<style>
 
 .bg-primary {
@@ -174,6 +175,29 @@ input:focus ~ .highlight {
 
 	</head>
 	<body>
+		<nav id="navBar" >
+			<div class="logo">
+				<img class="logo-cloudify" src="../content/logo/cloudify.png" /><a href="#"><span>Cloudify</span></a>
+			</div>
+			<div class="InNavBar" id="desktopNav">
+				<a class="Navlink" href="#">Home</a>
+				<a  class="Navlink" href="/about">About</a>
+				<a  class="Navlink" href="request/request.html">Form</a>
+				<a class="Navlink" href="/EcoSystem">EcoSystem</a>
+			</div>
+			<div id="mobileMenuIcon">&#9776;</div>
+			<div id="mobileNavContainer">
+				<div id="closeButton">&times;</div> 
+  				<div class="InNavBar" id="mobileNav">
+    					<a class="Navlink" href="#">Home</a>
+					<a class="Navlink" href="/about">About</a>
+					<a class="Navlink" href="request/request.html">Contact</a>
+					<a class="Navlink" href="/EcoSystem">EcoSystem</a>
+  				</div>
+			</div>
+		</nav>
+
+
 	<section class="ftco-section">
 		<div class="container">
 			<div class="row justify-content-center">
@@ -890,8 +914,41 @@ input:focus ~ .highlight {
 			</div>
 		</div>
 	</section>
+    <div class="footer-div">
+			<footer>
+				<div class="logo">
+					<img class="logo-cloudify" src="../content/logo/cloudify.png" /><span>Cloudify</span>
+				</div>
+				<div class="footer-content">
+					<h1>Get in touch with us</h1>
+					<p>if you'd like to get in contact with cloudify team, please <a class="footerLink" href="contact/contact.html">contact us here</a></p>
+					<div class="social-media">
+					</div>
+				</div>
+				<div class="signup">
+					<h1>Sign up for updates</h1>
+					<p>keep up to date with lates updates</p>
+					<div id="submitPlace">
+						<input id="email" placeholder="Your Email" type="text" />
+						<button id="emailSubmit" type="submit" >submit</button>
+					</div>	
+				</div>
+				<div class="userful">
+					<h1>Useful Links</h1>
+					<div class="links">
+							 <p><a class="link" href="#">Careers</a></p>
+							 <p><a class="link" href="#">Affilate Agreement</a></p>
+							 <p><a class="link" href="#">Privacy Policy</a></p>
+							<p><a class="link" href="#">Cookie Policy</a></p>
+							<p><a class="link" href="#">Terms of Service</a></p>
+							<p><a class="link" href="#">Brand Assets</a></p>
+					</div>
+				</div> 
+			</footer>
+		</div>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="../script.js"></script>
 
 	</body>
 </html>
