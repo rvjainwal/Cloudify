@@ -1114,13 +1114,22 @@ footer{
 
 @media (max-width: 550px){
 	h1{
-		font-size: large;
+		font-size: larger;
 	}
 	
 	p{
 		font-size: medium;
 	}
 	
+	.boldContent{
+		font-size: x-large;
+	}
+
+	.Content{
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+
 	.footer-content{
 		width: 100%;
 	}
@@ -1131,6 +1140,8 @@ footer{
 
 	.ecosystem .ContentEco{
 		font-size: medium;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 
 	.highlights #graphicMeasure #circle{
